@@ -17,6 +17,11 @@ define('FILE_READ_MODE', 0644);
 define('FILE_WRITE_MODE', 0666);
 define('DIR_READ_MODE', 0755);
 define('DIR_WRITE_MODE', 0777);
+define('SERVER_AP', 'localhost');
+define('URL_CSS', 'http://'.SERVER_AP.'/sigecom-ci/assets/css/');
+define('URL_JS', 'http://'.SERVER_AP.'/sigecom-ci/assets/scripts/');
+define('URL_PG', 'http://'.SERVER_AP.'/sigecom-ci/assets/plugins/');
+define('URL_IMG', 'http://'.SERVER_AP.'/sigecom-ci/assets/img/');
 
 /*
 |--------------------------------------------------------------------------
