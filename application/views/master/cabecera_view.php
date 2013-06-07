@@ -38,6 +38,47 @@
             <a class="brand" href="index.html">
             <img src="<?php echo URL_IMG ?>logo-dashboard.png" alt="logo" />
             </a>
+            
+              <div class="navbar hor-menu hidden-phone hidden-tablet">
+               <div class="navbar-inner">
+                  <ul class="nav">
+                     <li class="visible-phone visible-tablet">
+                        <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                        <form class="sidebar-search">
+                           <div class="input-box">
+                              <a href="javascript:;" class="remove"></a>
+                              <input type="text" placeholder="Search..." />            
+                              <input type="button" class="submit" value=" " />
+                           </div>
+                        </form>
+                        <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                     </li>                     
+                     <li class="active">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+                        Empresas
+                        <span class="arrow"></span>     
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">YugoCorp</a></li>
+                           <li><a href="#">YugoFrio</a></li>
+                           <li><a href="#">Grupo DN</a></li>                                                      
+                        </ul>
+                        <b class="caret-out"></b>                        
+                     </li>                     
+                     <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Oficinas
+                        <span class="arrow"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a href="index.html">Trujillo</a></li>
+                           <li><a href="index.html">Chiclayo</a></li>                           
+                        </ul>
+                        <b class="caret-out"></b>                        
+                     </li>                     
+                  </ul>
+               </div>
+            </div>
+            
             <!-- END LOGO -->
             <!-- BEGIN RESPONSIVE MENU TOGGLER -->
             <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">

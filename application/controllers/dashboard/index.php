@@ -12,9 +12,7 @@ class Index extends CI_Controller {
     
     function _validarlogueo() {
         $logeado = $this->session->userdata('logeado');
-        $nidusuario = $this->session->userdata('datos');       
-        
-        echo $nidusuario;
+        $nidusuario = $this->session->userdata('nidusuario');              
         
         if ($logeado != true OR $nidusuario = null ) {
             redirect(URL_MAIN);            

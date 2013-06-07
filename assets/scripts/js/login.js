@@ -30,8 +30,7 @@ $(function()
                 type: "POST",
                 url: "login/enviardatos",
                 data: $(form).serialize(),
-                success: function(data){   
-                    alert(data);
+                success: function(data){                       
                      switch (data) {
                         case "0":
                             $('#mensaje').html('<div class="alert alert-error"><button class="close" data-dismiss="alert"></button><span>Error!! Verifique sus credenciales.</span></div>');                            
