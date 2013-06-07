@@ -30,16 +30,16 @@ $(function()
                 type: "POST",
                 url: "login/enviardatos",
                 data: $(form).serialize(),
-                success: function(data){                        
-                    if (data==1) {                            
-                        //alert('Datos ingresados correctamente');
-                        $('#mensaje').html('<div class="alert alert-success"><button class="close" data-dismiss="alert"></button><span>Listo!! Bienvenido al sistema.</span></div>');
-                        administracion();
-                    }else{
-                        if (data==0) {
-                        $('#mensaje').html('<div class="alert alert-error"><button class="close" data-dismiss="alert"></button><span>Error!! Verifique sus credenciales.</span></div>');    
-                        }
-                    }                               
+                success: function(data){   
+                    alert(data);
+                     switch (data) {
+                        case "0":
+                            $('#mensaje').html('<div class="alert alert-error"><button class="close" data-dismiss="alert"></button><span>Error!! Verifique sus credenciales.</span></div>');                            
+                            break;
+                        default:
+                            $('#mensaje').html('<div class="alert alert-success"><button class="close" data-dismiss="alert"></button><span>Listo!! Bienvenido al sistema.</span></div>');   
+                            administracion();
+                    }                          
             },
             error: function(data){
                 alert('Error!! Consulte con el administrador');

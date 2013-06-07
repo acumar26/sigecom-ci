@@ -44,11 +44,9 @@
    <script src="<?php echo URL_PG ?>jquery-easy-pie-chart/jquery.easy-pie-chart.js" type="text/javascript"></script>
    <script src="<?php echo URL_PG ?>jquery.sparkline.min.js" type="text/javascript"></script>  
    
-   <script src="<?php echo URL_PG ?>flot/jquery.flot.js"></script>
-   <script src="<?php echo URL_PG ?>flot/jquery.flot.resize.js"></script>
-   <script src="<?php echo URL_PG ?>flot/jquery.flot.pie.js"></script>
+  
    <script src="<?php echo URL_PG ?>flot/jquery.flot.stack.js"></script>
-   <script src="<?php echo URL_PG ?>flot/jquery.flot.crosshair.js"></script>
+   
    
    <!-- END PAGE LEVEL PLUGINS -->
    <!-- BEGIN PAGE LEVEL SCRIPTS -->

@@ -6,10 +6,10 @@ if (!defined('BASEPATH'))
 class Login extends CI_Controller {
 
     function __construct() {
-        parent::__construct();        
-        $this->load->model('login_model');                
+        parent::__construct();
+        $this->load->model('login_model');        
     }
-    
+
     public function index() {
         $this->load->view('login_view');
     }
@@ -19,11 +19,22 @@ class Login extends CI_Controller {
         $txt_contrasena = md5(trim($_POST['txt_contrasena']));
 
         $result = $this->login_model->enviardatos($txt_usuario, $txt_contrasena);
-        
+
         if ($result) {
-            echo 1; 
+
+            $sesion_data = array(                
+                'logeado' => true,
+                'cusuario' => $result[0]['cusuario'],
+                'datos' => $result[0]['cnombres'] . ', ' . $result[0]['capellidos'],
+                'nidusuario' => $result[0]['nidusuario'],
+                'nidpersona' => $result[0]['nidpersona']
+            );
+            $this->session->set_userdata($sesion_data);            
+            
+            echo 1;
+            
         } else {
-            echo 0; 
+            echo 0;
         }
     }
 

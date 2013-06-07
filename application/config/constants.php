@@ -23,6 +23,7 @@ define('URL_CSS', 'http://'.SERVER_AP.'/sigecom-ci/assets/css/');
 define('URL_JS', 'http://'.SERVER_AP.'/sigecom-ci/assets/scripts/');
 define('URL_PG', 'http://'.SERVER_AP.'/sigecom-ci/assets/plugins/');
 define('URL_IMG', 'http://'.SERVER_AP.'/sigecom-ci/assets/img/');
+define('URL_MAIN', 'http://'.SERVER_AP.'/sigecom-ci/'); 
 
 /*
 |--------------------------------------------------------------------------
