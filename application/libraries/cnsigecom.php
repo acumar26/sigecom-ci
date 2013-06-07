@@ -14,18 +14,21 @@ class cnsigecom {
 
     public function __construct() {
 
-//       $this->serverName = "LUIGGI-PC"; //serverName\instanceName
 
-        // $this->serverName = "TUXITODEB"; //serverName\instanceName
-        // $this->serverName = "172.20.1.50"; //serverName\instanceName
-        $this->serverName = "10.10.1.149"; //serverName\instanceName
-        //$serverName = "172.20.1.50"; //serverName\instanceName
-        $this->connectionInfo = array("Database" => "GeComCI", "UID" => "sa", "PWD" => "", "CharacterSet" => 'UTF-8');
+        $this->serverName = "192.168.1.149";        
+        $this->connectionInfo = array("Database" => "GeComCI", "UID" => "sigecom_log", "PWD" => "H@dibina2013", "CharacterSet" => 'UTF-8');
 
-        // $this->connectionInfo = array("Database" => "bdMptIntegradaCI", "UID" => "sa", "PWD" => "123", "CharacterSet" => 'UTF-8');
-        
-        // $connectionInfo = array("Database"=>"bdMptIntegrada", "UID"=>"desarrollo", "PWD"=>"@desarrollo123");                        
         $this->cn = sqlsrv_connect($this->serverName, $this->connectionInfo);
+        //echo $this->serverName;
+        
+//        if( $this->cn ) {
+//            echo "Conexión establecida.<br />";
+//            
+//        }else{
+//            echo "Conexión no se pudo establecer.<br />";
+//            die( print_r( sqlsrv_errors(), true));
+//        }
+        
     }
 
     //metodos
