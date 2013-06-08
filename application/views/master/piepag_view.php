@@ -64,7 +64,7 @@
          Index.initChat();
          Index.initMiniCharts();
          Index.initDashboardDaterange();
-         Index.initIntro();
+         //Index.initIntro();
          Charts.init();
          Charts.initCharts();
          Charts.initPieCharts();

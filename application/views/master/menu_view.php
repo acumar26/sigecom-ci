@@ -8,35 +8,39 @@
             <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
         </li>
         <li class="start active ">
-            <a href="index.html">
+            <a href="index">
                 <i class="icon-home"></i> 
                 <span class="title">Inicio</span>
                 <span class="selected"></span>
             </a>
         </li>
-        <li class="">
-            <a href="javascript:;">
-                <i class="icon-cogs"></i> 
-                <span class="title">Mantenedores</span>
-                <span class="arrow "></span>
-            </a>
-            <ul class="sub-menu">
-                <li >
-                    <a href="#">                        
-                        Sucursal							
+
+        <?php 
+        if ($menupadrebasica) {
+
+            foreach ($menupadrebasica as $key => $padrebasica) {
+                ?>        
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-th-list"></i> 
+                        <span class="title"><?php echo $padrebasica['copcion'] ?></span>
+                        <span class="arrow "></span>
                     </a>
+                    <ul class="sub-menu">                            
+                            <?php if ($menupadrebasica['nidopcion']==$menuhijobasica[0]['nidopcion']) {
+                            foreach ($menuhijobasica as $key => $hijobasica) { ?>
+                            <li >
+                                <a href="<?php echo $hijobasica[0]['cruta'] ?>">
+                                <?php echo $hijobasica[0]['copcion'] ?>
+                                </a>
+                            </li>                              
+                            <?php }} ?>
+                    </ul>
                 </li>
-                <li >
-                    <a href="#">
-                        Empresas
-                    </a>
-                </li>                              
-            </ul>
-        </li>
 
+            <?php }  }  ?>
 
-
-        <li class="">
+<!--        <li class="">
             <a href="javascript:;">
                 <i class="icon-bookmark-empty"></i> 
                 <span class="title">Config. del sistema</span>
@@ -55,27 +59,34 @@
                     </a>
                 </li>                
             </ul>
-        </li>
+        </li>-->
 
-        <li class="">
-            <a href="javascript:;">
-                <i class="icon-th-list"></i> 
-                <span class="title">Panel de Usuario</span>
-                <span class="arrow "></span>
-            </a>
-            <ul class="sub-menu">
-                <li >
-                    <a href="table_basic.html">
-                        Ver mis datos
+
+        <?php
+        if ($menupadreusuario) {
+
+            foreach ($menupadreusuario as $key => $padreusuario) {
+                ?>        
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-th-list"></i> 
+                        <span class="title"><?php echo $padreusuario['copcion'] ?></span>
+                        <span class="arrow "></span>
                     </a>
+                    <ul class="sub-menu">
+                                <?php foreach ($menuhijousuario as $key => $hijousuario) { ?>
+                            <li >
+                                <a href="<?php echo $hijousuario['cruta'] ?>">
+                                <?php echo $hijousuario['copcion'] ?>
+                                </a>
+                            </li>
+                <?php } ?>
+                    </ul>
                 </li>
-                <li >
-                    <a href="table_responsive.html">
-                        Cambiar datos
-                    </a>
-                </li>                
-            </ul>
-        </li>
+
+    <?php }
+}
+?>
     </ul>
     <!-- END SIDEBAR MENU -->
 </div>

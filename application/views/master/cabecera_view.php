@@ -39,20 +39,9 @@
             <img src="<?php echo URL_IMG ?>logo-dashboard.png" alt="logo" />
             </a>
             
-              <div class="navbar hor-menu hidden-phone hidden-tablet">
+              <div class="navbar hor-menu ">
                <div class="navbar-inner">
-                  <ul class="nav">
-                     <li class="visible-phone visible-tablet">
-                        <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-                        <form class="sidebar-search">
-                           <div class="input-box">
-                              <a href="javascript:;" class="remove"></a>
-                              <input type="text" placeholder="Search..." />            
-                              <input type="button" class="submit" value=" " />
-                           </div>
-                        </form>
-                        <!-- END RESPONSIVE QUICK SEARCH FORM -->
-                     </li>                     
+                  <ul class="nav">                                         
                      <li class="active">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
                         Empresas

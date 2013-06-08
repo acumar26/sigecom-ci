@@ -24,9 +24,11 @@
             </div>
         </div>
         <!-- END PAGE HEADER-->
-        <div id="dashboard">
+        <div id="dashboard">            
+            
+            
             <!-- BEGIN DASHBOARD STATS -->
-            <div class="row-fluid">
+<!--            <div class="row-fluid">
                 <div class="span3 responsive" data-tablet="span6" data-desktop="span3">
                     <div class="dashboard-stat blue">
                         <div class="visual">
@@ -87,10 +89,10 @@
                         </a>                 
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!-- END DASHBOARD STATS -->
-            <div class="clearfix"></div>            
-            <div class="row-fluid">
+<!--            <div class="clearfix"></div>            -->
+<!--            <div class="row-fluid">
                 <div class="span6">
                     <div class="portlet box green">
                         <div class="portlet-title">
@@ -100,7 +102,7 @@
 
                             <div class="row-fluid span12" >
 
-                                <!-- BEGIN STACK CHART CONTROLS PORTLET-->
+                                 BEGIN STACK CHART CONTROLS PORTLET
                                 <div class="portlet box green">
                                     <div class="portlet-title">
                                         <div class="caption"><i class="icon-reorder"></i>Ventas en soles por semanas</div>                                        
@@ -109,7 +111,7 @@
                                         <div id="chart_5" style="height:250px;"></div>                                        
                                     </div>
                                 </div>
-                                <!-- END STACK CHART CONTROLS PORTLET-->
+                                 END STACK CHART CONTROLS PORTLET
 
                             </div>
 
@@ -170,7 +172,7 @@
 
                             <div class="row-fluid span12" >
 
-                                <!-- BEGIN STACK CHART CONTROLS PORTLET-->
+                                 BEGIN STACK CHART CONTROLS PORTLET
                                 <div class="portlet box red">
                                     <div class="portlet-title">
                                         <div class="caption"><i class="icon-reorder"></i>Ventas en soles por semanas</div>                                        
@@ -179,7 +181,7 @@
                                         <div id="chart_6" style="height:250px;"></div>                                        
                                     </div>
                                 </div>
-                                <!-- END STACK CHART CONTROLS PORTLET-->
+                                 END STACK CHART CONTROLS PORTLET
 
                             </div>
 
@@ -231,9 +233,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="clearfix"></div>           
-            <div class="row-fluid">
+            </div>-->
+<!--            <div class="clearfix"></div>           -->
+<!--            <div class="row-fluid">
                  <div class="span6">
                     <div class="portlet box blue">
                         <div class="portlet-title">
@@ -243,7 +245,7 @@
 
                             <div class="row-fluid span12" >
 
-                                <!-- BEGIN STACK CHART CONTROLS PORTLET-->
+                                 BEGIN STACK CHART CONTROLS PORTLET
                                 <div class="portlet box blue">
                                     <div class="portlet-title">
                                         <div class="caption"><i class="icon-reorder"></i>Ventas en soles por semanas</div>                                        
@@ -252,7 +254,7 @@
                                         <div id="chart_7" style="height:250px;"></div>                                        
                                     </div>
                                 </div>
-                                <!-- END STACK CHART CONTROLS PORTLET-->
+                                 END STACK CHART CONTROLS PORTLET
 
                             </div>
 
@@ -313,7 +315,7 @@
 
                             <div class="row-fluid span12" >
 
-                                <!-- BEGIN STACK CHART CONTROLS PORTLET-->
+                                 BEGIN STACK CHART CONTROLS PORTLET
                                 <div class="portlet box yellow">
                                     <div class="portlet-title">
                                         <div class="caption"><i class="icon-reorder"></i>Ventas en soles por semanas</div>                                        
@@ -322,7 +324,7 @@
                                         <div id="chart_8" style="height:250px;"></div>                                        
                                     </div>
                                 </div>
-                                <!-- END STACK CHART CONTROLS PORTLET-->
+                                 END STACK CHART CONTROLS PORTLET
 
                             </div>
 
@@ -374,8 +376,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="clearfix"></div>
+            </div>-->
+<!--            <div class="clearfix"></div>-->
 
 
         </div>
