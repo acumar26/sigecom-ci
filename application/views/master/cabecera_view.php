@@ -96,7 +96,7 @@
                      
                      <li><a href="#"><i class="icon-lock"></i> Cambiar clave</a></li>
                      <li class="divider"></li>
-                     <li><a href="#"><i class="icon-key"></i> Cerrar sesion</a></li>
+                     <li><a href="<?php echo URL_MAINDAS ?>logout"><i class="icon-key"></i> Cerrar sesion</a></li>
                   </ul>
                </li>
                <!-- END USER LOGIN DROPDOWN -->
