@@ -7,12 +7,13 @@ class Menu_model extends CI_Model {
         
     }
 
-    function menupadreusuario() {
+    function menupadreusu() {
         $this->cnsigecom->setParam("opcpadre");
         $this->cnsigecom->setParam('0');
-        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));
-        $this->cnsigecom->setParam('0');
-        $this->cnsigecom->setParam('7');
+        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));        
+        $this->cnsigecom->setParam(7);
+        $this->cnsigecom->setParam(null);
+        $this->cnsigecom->setParam(null);
         
         $query = $this->cnsigecom->consulta('SP_SGC_S_Opciones');        
         
@@ -23,12 +24,13 @@ class Menu_model extends CI_Model {
         }
     }
     
-    function menuhijousuario ($nidopcion){
+    function menuhijousu (){
         $this->cnsigecom->setParam("opchijo");
         $this->cnsigecom->setParam('0');
-        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));
-        $this->cnsigecom->setParam($nidopcion);
-        $this->cnsigecom->setParam('7');
+        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));        
+        $this->cnsigecom->setParam(7);
+        $this->cnsigecom->setParam(null);
+        $this->cnsigecom->setParam(null);
         
         $query = $this->cnsigecom->consulta('SP_SGC_S_Opciones');        
         
@@ -39,28 +41,13 @@ class Menu_model extends CI_Model {
         }
     }
     
-    function menupadrebasica() {
+    function menupadrebas() {
         $this->cnsigecom->setParam("opcpadre");
         $this->cnsigecom->setParam('0');
-        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));
-        $this->cnsigecom->setParam('0');
-        $this->cnsigecom->setParam('5');
-        
-        $query = $this->cnsigecom->consulta('SP_SGC_S_Opciones');        
-        
-        if ($query) {
-            return $query;
-        } else {
-            return 0;
-        }
-    }
-    
-    function menuhijobasica ($nidopcion){
-        $this->cnsigecom->setParam("opchijo");
-        $this->cnsigecom->setParam('0');
-        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));
-        $this->cnsigecom->setParam($nidopcion);
-        $this->cnsigecom->setParam('5');
+        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));        
+        $this->cnsigecom->setParam(5);
+        $this->cnsigecom->setParam(null);
+        $this->cnsigecom->setParam(null);
         
         $query = $this->cnsigecom->consulta('SP_SGC_S_Opciones');        
         
@@ -71,6 +58,41 @@ class Menu_model extends CI_Model {
         }
     }
 
+    function menuhijobas (){
+        $this->cnsigecom->setParam("opchijo");
+        $this->cnsigecom->setParam('0');
+        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));        
+        $this->cnsigecom->setParam(5);
+        $this->cnsigecom->setParam(null);
+        $this->cnsigecom->setParam(null);
+        
+        $query = $this->cnsigecom->consulta('SP_SGC_S_Opciones');        
+        
+        if ($query) {
+            return $query;
+        } else {
+            return 0;
+        }
+    }
+    
+    function validarpermisos (){
+        $this->cnsigecom->setParam("validarpermiso");
+        $this->cnsigecom->setParam(null);
+        $this->cnsigecom->setParam($this->session->userdata('nidusuario'));        
+        $this->cnsigecom->setParam(null);
+        $this->cnsigecom->setParam($this->session->userdata('url1'));
+        $this->cnsigecom->setParam($this->session->userdata('url2'));
+        $query = $this->cnsigecom->consulta('SP_SGC_S_Opciones');        
+        
+        if ($query) {
+            return $query;
+            
+        } else {
+            
+            redirect(URL_MAINDAS.'index');
+        }
+    }
+    
 }
 
 ?>

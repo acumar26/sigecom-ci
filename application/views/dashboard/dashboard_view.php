@@ -1,23 +1,16 @@
-<!-- BEGIN PAGE -->
-<div class="page-content">         
-    <!-- BEGIN PAGE CONTAINER-->
-    <div class="container-fluid">
+
         <!-- BEGIN PAGE HEADER-->
         <div class="row-fluid">
             <div class="span12">                  
                 <!-- BEGIN PAGE TITLE & BREADCRUMB-->			
                 <h3 class="page-title">
-                    <small>Bienvenid@ : Marlon H Garcia Zarate</small>
+                    <small>Bienvenid@ : <?php echo $this->session->userdata('datos'); ?></small>
                 </h3>
                 <ul class="breadcrumb">
                     <li>
                         <i class="icon-home"></i>
-                        <a href="index.html">Inicio</a>
-                        <i class="icon-angle-right"></i></li>
-                    <li><a href="#">Datos Generales</a></li>
-                    <li class="pull-right no-text-shadow">
-
-                    </li>
+                        <a href="#">Inicio</a>                        
+                    <li class="pull-right no-text-shadow"></li>
 
                 </ul>
                 <!-- END PAGE TITLE & BREADCRUMB-->
@@ -381,7 +374,4 @@
 
 
         </div>
-    </div>
-    <!-- END PAGE CONTAINER-->    
-</div>
-<!-- END PAGE -->
+    

@@ -3,7 +3,7 @@
 
 <head>
    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-   <title>..:: Sistema de Gestion Comercial | Dashborad ::..</title>
+   <title>..:: Sistema de Gestion Comercial | <?php echo $titulo?> ::..</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
    <meta content="" name="author" />
@@ -35,7 +35,7 @@
       <div class="navbar-inner">
          <div class="container-fluid">
             <!-- BEGIN LOGO -->
-            <a class="brand" href="index.html">
+            <a class="brand" href="<?php echo URL_MAINDAS?>index">
             <img src="<?php echo URL_IMG ?>logo-dashboard.png" alt="logo" />
             </a>
             
@@ -87,8 +87,8 @@
                <!-- BEGIN USER LOGIN DROPDOWN -->
                <li class="dropdown user">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img alt="" src="<?php echo URL_IMG ?>avatar1_small.jpg" />
-                  <span class="username">mgarcia</span>
+                  <!--<img alt="" src="<?php echo URL_IMG ?>avatar1_small.jpg" />-->
+                  <span class="username"><?php echo $this->session->userdata('cusuario') ?></span>
                   <i class="icon-angle-down"></i>
                   </a>
                   <ul class="dropdown-menu">

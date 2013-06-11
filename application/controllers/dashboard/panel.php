@@ -3,34 +3,30 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Index extends CI_Controller {
+class Panel extends CI_Controller {
 
     function __construct() {
-        parent::__construct(); 
+        parent::__construct();         
         $this->_validaracceso();
-        $this->load->model('menu_model');
     }
     
     function _validaracceso() {
+        $this->cargas->validarpermisos();
+        
         $logeado = $this->session->userdata('logeado');
         $nidusuario = $this->session->userdata('nidusuario');              
         
         if ($logeado != true OR $nidusuario = null ) {
-            redirect(URL_MAIN);
+            redirect(URL_MAIN);            
         }
-    }
+    }    
     
-    function index() {
+    public function vermisdatos() {       
         
-        $data['main_content'] = 'dashboard/dashboard_view';                       
-        $data['titulo'] = 'SIGECOM';
+        $data['main_content'] = 'panel/vermisdatos_view'; 
+        $data['titulo'] = 'Ver mis datos';
         $this->load->view('master/plantilla_view', $data);        
         
-    } 
-    
-    function logout() {
-        $this->session->sess_destroy();
-        redirect(URL_MAIN);        
-    }
+    }    
 
 }
