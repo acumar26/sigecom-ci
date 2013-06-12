@@ -6,7 +6,7 @@ class Cargas {
     public function menupadreusu() {
         $CI = & get_instance();
         $CI->load->model('menu_model','menupadreusu'); 
-        $url1 = $CI->uri->segment(2);
+        $url1 = $CI->uri->segment(1);
         $data = array('url1' => $url1);
         $CI->session->set_userdata($data);        
         return $CI->menupadreusu->menupadreusu();
@@ -15,7 +15,7 @@ class Cargas {
     public function menuhijousu() {
         $CI = & get_instance();
         $CI->load->model('menu_model','menuhijousu'); 
-        $url2 = $CI->uri->segment(2).'/' . $CI->uri->segment(3);
+        $url2 = $CI->uri->segment(1).'/' . $CI->uri->segment(2);
         $data = array('url2' => $url2);
         $CI->session->set_userdata($data);
         
@@ -25,7 +25,7 @@ class Cargas {
     public function menupadrebas() {
         $CI = & get_instance();
         $CI->load->model('menu_model','menupadrebas'); 
-        $url1 = $CI->uri->segment(2);
+        $url1 = $CI->uri->segment(1);
         $data = array('url1' => $url1);  
         $CI->session->set_userdata($data);
         return $CI->menupadrebas->menupadrebas();
@@ -34,7 +34,7 @@ class Cargas {
     public function menuhijobas() {
         $CI = & get_instance();
         $CI->load->model('menu_model','menuhijobas'); 
-        $url2 = $CI->uri->segment(2).'/' . $CI->uri->segment(3);
+        $url2 = $CI->uri->segment(1).'/' . $CI->uri->segment(2);
         $data = array('url2' => $url2);
         $CI->session->set_userdata($data);
         return $CI->menuhijobas->menuhijobas();
@@ -44,8 +44,8 @@ class Cargas {
     public function validarpermisos() {
         $CI = & get_instance();
         $CI->load->model('menu_model','validarpermisos'); 
-        $url1 = $CI->uri->segment(2);
-        $url2 = $CI->uri->segment(2).'/' . $CI->uri->segment(3);
+        $url1 = $CI->uri->segment(1);
+        $url2 = $CI->uri->segment(1).'/' . $CI->uri->segment(2);
         $data = array('url1' => $url1,'url2'=>$url2);
         $CI->session->set_userdata($data);
         return $CI->validarpermisos->validarpermisos();        

@@ -33,7 +33,7 @@ $(function()
                 success: function(data){                       
                      switch (data) {
                         case "0":
-                            $('#mensaje').html('<div class="alert alert-error"><button class="close" data-dismiss="alert"></button><span>Error!! Verifique sus credenciales.</span></div>');                            
+                            $('#mensaje').html('<div class="alert alert-error"><button class="close" data-dismiss="alert"></button><span>Error!! Verifique sus credenciales.</span></div>');
                             break;
                         default:
                             $('#mensaje').html('<div class="alert alert-success"><button class="close" data-dismiss="alert"></button><span>Listo!! Bienvenido al sistema.</span></div>');   

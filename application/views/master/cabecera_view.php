@@ -23,8 +23,18 @@
    <link href="<?php echo URL_PG ?>fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
    <link href="<?php echo URL_PG ?>jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" media="screen"/>
    <link href="<?php echo URL_PG ?>jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+   <link rel="stylesheet" type="text/css" href="<?php echo URL_PG ?>select2/select2_metro.css" />
+   <link rel="stylesheet" href="<?php echo URL_PG ?>data-tables/DT_bootstrap.css" />
+   
+   <script src="<?php echo URL_PG ?>jquery-1.8.3.min.js" type="text/javascript"></script>   
+   <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->  
+   <script src="<?php echo URL_PG ?>jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+   <script src="<?php echo URL_PG ?>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="<?php echo URL_JS ?>jsGeneral.js" type="text/javascript"></script>
+   
    <!-- END PAGE LEVEL STYLES -->
    <link rel="shortcut icon" href="favicon.ico" />
+   
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->

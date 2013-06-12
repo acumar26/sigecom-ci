@@ -47,7 +47,7 @@
                             if ($padrebasica['nidopcion'] == $hijobasica['cvalor']) {
                                 ?>
                                 <li <?php if ($hijobasica['cruta']==$valurl2) { ?> class="active" <?php } ?> >
-                                    <a href="<?php echo URL_MAINDAS . $hijobasica['cruta'] ?>">
+                                    <a href="<?php echo URL_MAIN . $hijobasica['cruta'] ?>">
                                         <?php echo $hijobasica['copcion'] ?>
                                     </a>
                                 </li>                              
@@ -81,7 +81,7 @@
                             if ($padreusuario['nidopcion'] == $hijousuario['cvalor']) {
                                 ?>
                                 <li <?php if ($hijousuario['cruta']==$valurl2) { ?> class="active" <?php } ?> >
-                                    <a href="<?php echo URL_MAINDAS . $hijousuario['cruta'] ?>">
+                                    <a href="<?php echo URL_MAIN . $hijousuario['cruta'] ?>">
                                         <?php echo $hijousuario['copcion'] ?>
                                     </a>
                                 </li>                              

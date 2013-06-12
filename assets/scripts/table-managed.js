@@ -21,17 +21,17 @@ var TableManaged = function () {
                 ],
                 "aLengthMenu": [
                     [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [5, 15, 20, "Todos"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
                 "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
                 "sPaginationType": "bootstrap",
                 "oLanguage": {
-                    "sLengthMenu": "_MENU_ records per page",
+                    "sLengthMenu": "_MENU_ records por página",
                     "oPaginate": {
-                        "sPrevious": "Prev",
-                        "sNext": "Next"
+                        "sPrevious": "Ant.",
+                        "sNext": "Sig."
                     }
                 },
                 "aoColumnDefs": [{
@@ -62,17 +62,17 @@ var TableManaged = function () {
             $('#sample_2').dataTable({
                 "aLengthMenu": [
                     [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [5, 15, 20, "Todos"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
                 "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
                 "sPaginationType": "bootstrap",
                 "oLanguage": {
-                    "sLengthMenu": "_MENU_ per page",
+                    "sLengthMenu": "_MENU_ por página",
                     "oPaginate": {
-                        "sPrevious": "Prev",
-                        "sNext": "Next"
+                        "sPrevious": "Ant.",
+                        "sNext": "Sig."
                     }
                 },
                 "aoColumnDefs": [{
@@ -103,17 +103,17 @@ var TableManaged = function () {
             $('#sample_3').dataTable({
                 "aLengthMenu": [
                     [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [5, 15, 20, "Todos"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
                 "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
                 "sPaginationType": "bootstrap",
                 "oLanguage": {
-                    "sLengthMenu": "_MENU_ per page",
+                    "sLengthMenu": "_MENU_ por página",
                     "oPaginate": {
-                        "sPrevious": "Prev",
-                        "sNext": "Next"
+                        "sPrevious": "Ant.",
+                        "sNext": "Sig."
                     }
                 },
                 "aoColumnDefs": [{
