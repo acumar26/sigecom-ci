@@ -1,5 +1,6 @@
 <script src="<?php echo URL_JS ?>empresa/jsEmpresa.js" ></script>
 
+
 <div class="row-fluid">
     <div class="span12">                  
         <!-- BEGIN PAGE TITLE & BREADCRUMB-->

@@ -41,7 +41,7 @@ $(function()
                     }                          
             },
             error: function(data){
-                alert('Error!! Consulte con el administrador');
+                $('#mensaje').html('<div class="alert alert-error"><button class="close" data-dismiss="alert"></button><span>Error!! Verifique sus credenciales.</span></div>');
             }
             });
     },            

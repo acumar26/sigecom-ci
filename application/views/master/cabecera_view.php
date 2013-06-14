@@ -26,10 +26,12 @@
    <link rel="stylesheet" type="text/css" href="<?php echo URL_PG ?>select2/select2_metro.css" />
    <link rel="stylesheet" href="<?php echo URL_PG ?>data-tables/DT_bootstrap.css" />
    
-   <script src="<?php echo URL_PG ?>jquery-1.8.3.min.js" type="text/javascript"></script>   
-   <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->  
-   <script src="<?php echo URL_PG ?>jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
-   <script src="<?php echo URL_PG ?>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="<?php echo URL_PG ?>jquery-1.8.3.min.js" type="text/javascript"></script> 
+        <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->  
+        <script src="<?php echo URL_PG ?>jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>    
+        <script src="<?php echo URL_PG ?>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo URL_PG ?>uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+        <script src="<?php echo URL_PG ?>jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
    <script src="<?php echo URL_JS ?>jsGeneral.js" type="text/javascript"></script>
    
    <!-- END PAGE LEVEL STYLES -->
