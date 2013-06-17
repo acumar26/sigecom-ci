@@ -30,11 +30,13 @@
    <!-- END CORE PLUGINS -->
    <!-- BEGIN PAGE LEVEL PLUGINS -->
     
+   <script type="text/javascript" src="<?php echo URL_PG ?>bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
    
    
    <script type="text/javascript" src="<?php echo URL_PG ?>select2/select2.min.js"></script>
    <script type="text/javascript" src="<?php echo URL_PG ?>data-tables/jquery.dataTables.js"></script>
    <script type="text/javascript" src="<?php echo URL_PG ?>data-tables/DT_bootstrap.js"></script>
+   <script type="text/javascript" src="<?php echo URL_PG ?>jquery-inputmask/jquery.inputmask.bundle.min.js"></script>   
    
    <!-- END PAGE LEVEL PLUGINS -->
    <!-- BEGIN PAGE LEVEL SCRIPTS -->

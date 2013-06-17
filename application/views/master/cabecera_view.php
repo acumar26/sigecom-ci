@@ -19,6 +19,7 @@
    <!-- END GLOBAL MANDATORY STYLES -->
    <!-- BEGIN PAGE LEVEL STYLES --> 
    <link href="<?php echo URL_PG ?>gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+   <link rel="stylesheet" type="text/css" href="<?php echo URL_PG ?>bootstrap-datepicker/css/datepicker.css" />
    <link href="<?php echo URL_PG ?>bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
    <link href="<?php echo URL_PG ?>fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
    <link href="<?php echo URL_PG ?>jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" media="screen"/>
